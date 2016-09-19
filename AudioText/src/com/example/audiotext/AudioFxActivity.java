@@ -33,7 +33,7 @@ public class AudioFxActivity extends Activity {
 	Handler handler = new Handler();
 	Runnable updateThread = new Runnable() {
 		public void run() {
-			// 获得歌曲现在播放位置并设置成播放进度条的值
+			// 获得歌曲现在播放位置并设置成播放进度条的值//我的修改
 			seekBar.setProgress(mMediaPlayer.getCurrentPosition());
 			// 每次延迟100毫秒再启动线程
 			handler.postDelayed(updateThread, 100);
